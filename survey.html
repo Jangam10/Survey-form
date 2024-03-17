@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+    <div class="container">
+        <div id="title">
+            <h1>Covid-19 KU Survey Form</h1>
+
+        </div>
+        <div id="description">
+            <p>Please take your time and fill the form</p>
+        </div>
+        <div class="maincontainer">
+            <div class="container2">
+                <form action="#" id="survey-form">
+                    <label for="name" id="name-label">Name:</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"
+                        required>
+                    <label for="email" id="email-label">E-mail:</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"
+                        required>
+                    <label for="age" id="age-label">Age:</label>
+                    <input type="number" name="age" id="age" min="10" max="80" class="form-control"
+                        placeholder="Enter your age" optional>
+                    <label for="option" id="option-label">Which option best describes your current health
+                        status?</label>
+                    <select id="dropdown" class="form-control" placeholder="Select the best option" required>
+                        <option disabled selected value>Select your health status</option>
+                        <option value="fine">Absolutely Fine</option>
+                        <option value="fiver">Mild Fiver</option>
+                        <option value="Cough">Continuos Coughing</option>
+                        <option value="recover">Gradually Recovering</option>
+                        <option value="other">Other Serious Symptoms </option>
+                    </select>
+                    <!-- for radio -->
+                    <label for="radio" id="radio-label">Family Infection Status:</label>
+                    <label><input name="Infection" value="Currently infected" type="radio" class="input-radio"
+                            checked>Currently infected</label>
+                    <label> <input name="Infection" value="Past infected" type="radio" class="input-radio"
+                            checked>Infected
+                        in the past</label>
+                    <label><input name="Infection" value="Not infected" type="radio" class="input-radio" checked>Not
+                        infected</label>
+                    <!-- for checkbox -->
+                    <label for="checkbox" id="checkbox-label">Select the type of support you are seeking for:</label>
+                    <label><input name="support" value="Immediate healthcare" type="checkbox"
+                            class="input-check">Immediate healthcare</label>
+                    <label><input name="support" value="Oxygen supply" type="checkbox" class="input-check">Oxygen
+                        supply</label>
+                    <label><input name="support" value="Equipments" type="checkbox" class="input-check">Mask and other
+                        equipments</label>
+                    <label><input name="support" value="Financial" type="checkbox" class="input-check">Financial</label>
+                    <label><input name="support" value="Mental" type="checkbox" class="input-check">Mental</label>
+                    <!-- for textarea  -->
+                    <label for="textarea" id="textarea-label">Any suggestions to the university?</label>
+                    <textarea name="suggestion" id="t-area" cols="1" rows="1"></textarea>
+
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        </div>
+
+</body>
+
+</html>
